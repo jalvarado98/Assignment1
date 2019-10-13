@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  color: white;
+  background-color: #4aaaa5;
+  border-color: #cccccc;
+  padding: 10px;
+  text-align: center;
+  width: 33%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #dddddd;
+  color: #cccccc
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #333333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #4aaaa5;
+  color: white;
+}
+
+.column {
+  float: left;
+  width: 40%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Jose Alvarado</h1>
+</div>
+
+<div class="topnav">
+  <a href="file:///Users/josealvarado/Desktop/assets/index.html">About</a>
+  <a href="file:///Users/josealvarado/Desktop/assets/portfolio.html">Portfolio</a>
+  <a href="file:///Users/josealvarado/Desktop/assets/contact.html">Contact</a>
+</div>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
+<body>
+<h2>Portfolio</h2>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="https://images-eu.ssl-images-amazon.com/images/I/81xt2%2BPD0IL.png" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Hangman</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="https://image.flaticon.com/icons/png/512/119/119702.png" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">RPG Game</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="https://icon-library.net/images/quiz-icon/quiz-icon-22.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Trivia Game</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="https://shivjisakina.github.io/Basic-Portfolio/assets/images/technics-q-c-640-480-7.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Rutgers Info Widget</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="https://i-love-png.com/images/15-152622_water-droplets-cartoon-robber-running-easy-to-rock.png" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Rock Paper Scissors</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+
+</div>
+
+</body>
+</html>

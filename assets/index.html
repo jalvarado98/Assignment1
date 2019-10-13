@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  color: white;
+  background-color: #4aaaa5;
+  border-color: #cccccc;
+  padding: 10px;
+  text-align: center;
+  width: 33%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #dddddd;
+  color: #cccccc
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #333333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #4aaaa5;
+  color: white;
+}
+
+.column {
+  float: left;
+  width: 40%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Jose Alvarado</h1>
+</div>
+
+<div class="topnav">
+  <a href="file:///Users/josealvarado/Desktop/assets/index.html">About</a>
+  <a href="file:///Users/josealvarado/Desktop/assets/portfolio.html">Portfolio</a>
+  <a href="file:///Users/josealvarado/Desktop/assets/contact.html">Contact</a>
+</div>
+
+<div class="row">
+    <div class="column">
+    <img src="file:///Users/josealvarado/Desktop/assets/images/Portfolio_img.jpg" alt="Jose Alvarado" id="bio-image"> 
+      
+    </div>
+    
+    <div class="column">
+      <p>Although we have better taco joints in my hometown (Laredo, Texas), I have to congratulate this city for the constant events going on and the great amount of job opportunities. I originally moved out here to major in jazz performance at Texas State. After a year there, I concluded that it was not the career path I wanted. I noticed how tech savvy Austin was, and then decided to pursue a career in a vital part of technology.</a></p>
+    </div>
+    
+  </div>
+</body>
+</html>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body>
+    <section id="full">
+          <section id="contact-info">
+            <h3>Contact Info</h3>
+            <ul>
+                <li><strong>Email:</strong><a href="#">Joebtz83@gmail.com</a></li>
+                <li><strong>GitHub:</strong><a href="#">https://github.com/jalvarado98</a></li>
+                <li><strong>Portfolio:</strong><a href="#">https://github.com/jalvarado98/Assignment1</a></li>
+            </ul>
+          </section>
+      </div> 
+      <footer>
+        </footer>      
+</body>
